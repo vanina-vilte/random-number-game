@@ -1,0 +1,115 @@
+html{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body{
+    position: relative;
+    padding: 20px;
+    height: 300px;
+    background-color: #444079;
+    font-family: sans-serif;
+    transition: 6s ease-in;
+  }
+  header{
+    text-align: center;
+    color: #233d4d;
+    margin-top: 30px;
+  }
+  li{
+    margin: 10px;
+  }
+  .rules{
+    text-align: left;
+  }
+
+  .rul{
+    color: #EEEEEE;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .lista-reglas{
+    color: #EEEEEE;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+  }
+
+  #start{
+    margin: 10px auto 5px auto;
+  }
+  
+  .started, #submit{
+    color: #29264e;
+    font-family: 'Baloo 2', cursive;
+    font-size: 17px;
+    background-color: #f3a0a0;
+    border-radius: 50px;
+    padding: 13px 23px;
+  }
+
+  .started:hover, #submit:hover{
+    background-color: #facece;
+  }
+
+  form{
+    text-align: center;
+    margin-top: 40px;
+    transition: 8s ease-out;
+  }
+  input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 5px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  #prevGuessLabel{
+    color: #facece;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+    float:left;
+    margin: 15px;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  #guess{
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    background-color: #edede8;
+  }
+  #submit{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 9px 23px;
+    font-weight: bolder;
+  }
+  .game{
+    display: none;
+  }
+  .restart{
+    display: none;
+    text-align: center;
+    margin: 10px auto;
+  }
+  #hint{
+    margin: 50px auto;
+    text-align:center;
+  }

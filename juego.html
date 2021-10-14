@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Random number game!!!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="rules">
+            <b class="rul">Reglas</b>
+            <ol class="lista-reglas">
+                <li> Se debe adivinar un numero aleatorio entre 1 y 100 incluido ambos numeros</li>
+                <li> Se le daran 10 oportunidades para adivinar el numero correctamente</li>
+                <li> Si adivinas el numero dentro de las 10 oportunidades ganas o si no podes volver a intentarlo</li>
+            </ol>
+        </div>
+        <button id="start" class="started">Comenzar a jugar!</button>
+        <div class="game">
+            <form id="myForm">
+                <input type="number" id="guess" min="1" max="100">
+                <input type="submit" id="submit" value="Chequear">
+            </form>
+            <div id="prevGuessLabel">
+                Suposiciones anteriores:
+                <b id="anterioresSupo"></b>
+            </div>
+            <br><br>
+            <div id="hint"></div>
+        </div>
+        <div id="gameover"></div>
+        <button id="reiniciar" class="restart"  onclick="reload()">Volver a jugar</button>
+        <script src="juego.js"></script>
+    </body>
+</html>
